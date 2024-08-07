@@ -35,7 +35,7 @@ const LogoText = styled.span`
 
 const Logo = ({ color }) => {
   // Refs
-  const logoTextRef = useRef(null)
+  const logoRef = useRef(null)
 
   // Hooks
   const { isHovered, transitionDuration, isBreakpointReached } = useVerticalNav()
@@ -49,29 +49,32 @@ const Logo = ({ color }) => {
       return
     }
 
-    if (logoTextRef && logoTextRef.current) {
+    if (logoRef && logoRef.current) {
       if (!isBreakpointReached && layout === 'collapsed' && !isHovered) {
-        logoTextRef.current?.classList.add('hidden')
+        logoRef.current?.classList.add('small')
       } else {
-        logoTextRef.current.classList.remove('hidden')
+        logoRef.current.classList.remove('small')
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isHovered, layout, isBreakpointReached])
 
   return (
-    <div className='flex items-center min-bs-[24px]'>
-      <MaterializeLogo />
-      <LogoText
+    <div className='flex items-center min-bs-[24px] logo-section' ref={logoRef}>
+      <MaterializeLogo
+        isHovered={isHovered}
+        isCollapsed={layout === 'collapsed'}
+        isBreakpointReached={isBreakpointReached}
+      />
+      {/* <LogoText
         color={color}
-        ref={logoTextRef}
+        ref={logoRef}
         isHovered={isHovered}
         isCollapsed={layout === 'collapsed'}
         transitionDuration={transitionDuration}
         isBreakpointReached={isBreakpointReached}
       >
         {themeConfig.templateName}
-      </LogoText>
+      </LogoText> */}
     </div>
   )
 }

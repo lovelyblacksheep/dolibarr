@@ -18,6 +18,50 @@
   --mui-mainColorChannels-shadow: var(--mui-mainColorChannels-lightShadow);
 }
 
+:root, [data-mui-color-scheme="light"] {
+  --mui-palette-primary-main: #F7A823;
+}
+
+[data-mui-color-scheme="light"] .ts-vertical-nav-root {
+  --mui-palette-text-primary: rgb(var(--mui-mainColorChannels-dark) / 0.9);
+  --mui-palette-background-default: #26272f;
+}
+
+[data-mui-color-scheme="dark"] {
+  /* --mui-palette-primary-main: #F7A823; */
+  --mui-palette-background-default: #26272f;
+}
+
+.ts-vertical-nav-root .logo-section div {
+  display: none;
+}
+
+.ts-vertical-nav-root .logo-section.small div {
+  min-inline-size: 2rem;
+  min-block-size: 2rem;
+}
+
+.ts-vertical-nav-root .logo-section:not(.small) div {
+  min-inline-size: 11rem;
+  min-block-size: 2rem;
+}
+
+[data-mui-color-scheme="light"] .ts-vertical-nav-root .logo-section:not(.small) .light-logo {
+  display: block;
+}
+
+[data-mui-color-scheme="light"] .ts-vertical-nav-root .logo-section.small .light-logo-small {
+  display: block;
+}
+
+[data-mui-color-scheme="dark"] .ts-vertical-nav-root .logo-section:not(.small) .dark-logo {
+  display: block;
+}
+
+[data-mui-color-scheme="dark"] .ts-vertical-nav-root .logo-section.small .dark-logo-small {
+  display: block;
+}
+
 [data-mui-color-scheme='dark'] {
   --backdrop-color: rgb(16 17 33 / 0.6);
   --mui-mainColorChannels-shadow: var(--mui-mainColorChannels-darkShadow);
