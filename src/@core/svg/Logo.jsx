@@ -111,8 +111,8 @@ const Logo = props => {
 	 viewBox="0 0 49 49" style={{ enableBackground: 'new 0 0 294 49' }} xmlSpace="preserve">
 <style type="text/css">
 {`
-              .st0 { fill: #70706F; }
-              .st1 { fill: #F7B032; }
+              .st0 { fill: #F7B032; }
+              .st1 { fill: #70706F; }
             `}
 </style>
 <g>
@@ -145,7 +145,7 @@ const Logo = props => {
 	 viewBox="0 0 294 49" style={{ enableBackground: 'new 0 0 294 49' }} xmlSpace="preserve">
 <style type="text/css">
 {`
-              .st0 { fill: #70706F; }
+              .st0 { fill: #FFFFFF; }
               .st1 { fill: #F7B032; }
             `}
 </style>
@@ -256,8 +256,8 @@ const Logo = props => {
 	 viewBox="0 0 49 49" style={{ enableBackground: 'new 0 0 294 49' }} xmlSpace="preserve">
 <style type="text/css">
 {`
-              .st0 { fill: #70706F; }
-              .st1 { fill: #F7B032; }
+              .st0 { fill: #F7B032; }
+              .st1 { fill: #FFFFFF; }
             `}
 </style>
 <g>
