@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Quicksand';
-  src: url('/fonts/Quicksand-VariableFont_wght.ttf') format('ttf');
+  src: url('/test/fonts/Quicksand-Regular.woff') format('woff');
        /* url('/fonts/custom-font.woff') format('woff'); */
   font-weight: normal;
   font-style: normal;
@@ -49,16 +49,15 @@ body {
   --mui-palette-error-dark: #f46a09;
 }
 
-.ts-vertical-nav-root .logo-section div {
+[data-mui-color-scheme="light"] .ts-vertical-nav-root .logo-section .dark-logo {
   display: none;
 }
 
-.ts-vertical-nav-root .logo-section.small div {
-  min-inline-size: 2rem;
-  min-block-size: 2rem;
+[data-mui-color-scheme="dark"] .ts-vertical-nav-root .logo-section .light-logo {
+  display: none;
 }
 
-.ts-vertical-nav-root .logo-section:not(.small) div {
+.ts-vertical-nav-root .logo-section div {
   min-inline-size: 11rem;
   min-block-size: 2rem;
 }
@@ -67,16 +66,16 @@ body {
   display: block;
 }
 
-[data-mui-color-scheme="light"] .ts-vertical-nav-root .logo-section.small .light-logo-small {
-  display: block;
+[data-mui-color-scheme="light"] .ts-vertical-nav-root .logo-section.small .light-logo .sub {
+  display: none;
 }
 
 [data-mui-color-scheme="dark"] .ts-vertical-nav-root .logo-section:not(.small) .dark-logo {
   display: block;
 }
 
-[data-mui-color-scheme="dark"] .ts-vertical-nav-root .logo-section.small .dark-logo-small {
-  display: block;
+[data-mui-color-scheme="dark"] .ts-vertical-nav-root .logo-section.small .dark-logo .sub {
+  display: none;
 }
 
 .logo-section:not(.small) .light-logo .st0, .dark-logo .st0 {
@@ -84,14 +83,6 @@ body {
 }
 
 .logo-section:not(.small) .light-logo .st1, .dark-logo .st1 {
-  fill: #F7B032;
-}
-
-.logo-section.small .dark-logo-small .st1, .logo-section.small .light-logo-small .st1 {
-  fill: #FFFFFF;
-}
-
-.logo-section.small .dark-logo-small .st0, .logo-section.small .light-logo-small .st0 {
   fill: #F7B032;
 }
 
