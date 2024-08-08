@@ -62,6 +62,10 @@ body {
   min-block-size: 2rem;
 }
 
+.ts-vertical-nav-root .ts-vertical-nav-header {
+  padding-inline-start: 1.125rem !important;
+}
+
 [data-mui-color-scheme="light"] .ts-vertical-nav-root .logo-section:not(.small) .light-logo {
   display: block;
 }
