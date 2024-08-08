@@ -8,8 +8,8 @@ import '@/app/globals.css'
 import '@assets/iconify-icons/generated-icons.css'
 
 export const metadata = {
-  title: 'Dolibarr',
-  description: 'Dolibarr System'
+  title: 'QNerp',
+  description: 'QNerp System'
 }
 
 const RootLayout = ({ children }) => {

@@ -66,12 +66,18 @@ body {
   padding-inline-start: 1.125rem !important;
 }
 
+.ts-vertical-nav-root .logo-section:not(.small) .light-logo .sub {
+  opacity: 1;
+  transition: all ease-in-out .3s;
+}
+
 [data-mui-color-scheme="light"] .ts-vertical-nav-root .logo-section:not(.small) .light-logo {
   display: block;
 }
 
 [data-mui-color-scheme="light"] .ts-vertical-nav-root .logo-section.small .light-logo .sub {
   display: none;
+  opacity: 0;
 }
 
 [data-mui-color-scheme="dark"] .ts-vertical-nav-root .logo-section:not(.small) .dark-logo {
@@ -80,6 +86,7 @@ body {
 
 [data-mui-color-scheme="dark"] .ts-vertical-nav-root .logo-section.small .dark-logo .sub {
   display: none;
+  opacity: 0;
 }
 
 .logo-section:not(.small) .light-logo .st0, .dark-logo .st0 {
