@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand-VariableFont_wght.ttf') format('ttf');
+       /* url('/fonts/custom-font.woff') format('woff'); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
 :root {
   --border-radius: var(--mui-shape-borderRadius);
   --border-color: var(--mui-palette-divider);
@@ -20,6 +32,8 @@
 
 :root, [data-mui-color-scheme="light"] {
   --mui-palette-primary-main: #F7A823;
+  --mui-palette-error-main: #ec6608;
+  --mui-palette-error-dark: #f46a09;
 }
 
 [data-mui-color-scheme="light"] .ts-vertical-nav-root {
@@ -30,6 +44,9 @@
 [data-mui-color-scheme="dark"] {
   /* --mui-palette-primary-main: #F7A823; */
   --mui-palette-background-default: #26272f;
+  --mui-palette-background-paper: #717170;
+  --mui-palette-error-main: #ec6608;
+  --mui-palette-error-dark: #f46a09;
 }
 
 .ts-vertical-nav-root .logo-section div {
@@ -71,6 +88,10 @@
 }
 
 .logo-section.small .dark-logo-small .st1, .logo-section.small .light-logo-small .st1 {
+  fill: #FFFFFF;
+}
+
+.logo-section.small .dark-logo-small .st0, .logo-section.small .light-logo-small .st0 {
   fill: #F7B032;
 }
 
